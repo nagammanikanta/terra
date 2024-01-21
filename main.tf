@@ -64,7 +64,6 @@ resource "google_compute_instance" "tf-instance-abc" {
   }
 }
 
-
 resource "google_container_cluster" "primary-cluster-tf" {
   name     = var.primary-cluster-tf
   location = var.zone

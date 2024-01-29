@@ -1,4 +1,4 @@
-
+/*
 output "instance" {
   value = google_compute_instance.tf-instance-abc.name
   sensitive = true
@@ -27,4 +27,5 @@ output "primary-cluster" {
     value = google_container_cluster.primary-cluster-tf.name
     sensitive = true
 }
+*/
 

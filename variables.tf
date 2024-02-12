@@ -1,6 +1,11 @@
 variable "project" {
   type=string
-  description = "leafy-summer-405104"
+  default = "coral-current-408814"
+  
+}
+variable "region-tf" {
+  type = string
+  default = "master-sector-414010"
   
 }
 variable "zone" {
@@ -61,7 +66,7 @@ variable "custom-vpc-tf" {
 }
 variable "gcs-bucket-cs" {
   type = string
-  default = "coral-current-408814-bucket"
+  default = "master-sector-414010-bucket"
   
 }
 

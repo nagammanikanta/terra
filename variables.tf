@@ -75,7 +75,7 @@ variable "location" {
   default = "US"
   
 }
-variable "primary-cluster-tf" {
+variable "primary-cluster" {
   type = string
   default = "my-gke-cluster"
   

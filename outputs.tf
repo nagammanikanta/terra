@@ -24,7 +24,7 @@ output "gcs-tf-bucket" {
     sensitive = true
 }
 output "primary-cluster" {
-    value = google_container_cluster.primary-cluster-tf.name
+    value = google_container_cluster.primary-cluster.name
     sensitive = true
 }
 

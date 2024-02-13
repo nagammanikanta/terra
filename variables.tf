@@ -24,7 +24,7 @@ variable "tf-instance-abc" {
 }
 variable "machine_type" {
 
-   default = "e2-micro"
+   default = "g1-small"
   
 }
 

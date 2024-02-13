@@ -64,7 +64,7 @@ resource "google_compute_instance" "tf-instance-abc" {
   }
 }
 
-resource "google_container_cluster" "primary-cluster" {
+resource "google_container_cluster" "primary-cluster-tf" {
   name     = var.primary-cluster
   location = var.zone
 
@@ -81,7 +81,7 @@ resource "google_container_cluster" "primary-cluster" {
 resource "google_container_node_pool" "primary_preemptible_nodes" {
   name       = var.primary_preemptible_nodes
   location = var.zone
-  cluster    = google_container_cluster.primary-cluster.name
+  cluster    = google_container_cluster.primary-cluster-tf.name
   node_count = var.node_count
   
 
